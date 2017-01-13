@@ -19,7 +19,7 @@ h1, h2, h3{
 
 header{
   position: relative; /* for absolute children */
-  background: #FFF url('https://www.fillmurray.com/1320/580') no-repeat;
+  background: #FFF url('https://www.fillmurray.com/g/1300/600') no-repeat;
   background-size: cover;
   height: 523px;
 }
@@ -137,10 +137,11 @@ header h1 {
   text-transform: uppercase;
   margin: 150px 0 0 0;
 
-  font-size: 104px;
+  font-size: 90px;
   line-height: 104px;
   font-weight: 400;
-  letter-spacing: -3px;
+  letter-spacing: 13px;
+  word-spacing: 15px;
 }
 
 header h4 {
@@ -148,4 +149,81 @@ header h4 {
   margin: 0;
   font-size: 15px;
   letter-spacing: -1px;
+}
+.headline {
+  width: 47.5%;
+}
+
+.headline h1 {
+  color: #003552;
+  text-transform: uppercase;
+  font-size: 57px;
+  margin: 0 0 0 155px;;
+}
+
+.article-date img {
+  border-radius: 50%;
+}
+
+.author-pic {
+  float: right;
+}
+
+.para1 {
+  width: 47.5%;
+  margin: 0 0 0 155px;
+}
+
+.rad {
+  color: #106db3;
+  font-size: 21px;
+  border-left: 2px solid #D3D3D3;
+  font-weight: 100;
+  padding-left: 17px;
+}
+
+.social-links {
+  float: right;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.bottom-headline {
+  border-top: 1px solid #DFE8EA;
+ text-align: center;
+}
+.most-pop {
+
+  font-size: 57px;
+  color: #003552;
+  text-transform: uppercase;
+
+}
+
+.pic h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+
+}
+.above-footer-pics {
+  display: inline-block;
+  margin: 0 auto;
+}
+.iron-log {
+  float: left;
+}
+.footer-nav {
+  float: right;
+}
+.footer-nav > ul > li{
+  display: inline;
+}
+
+.footer {
+  position: absolute;
+}
+footer h6 {
+  display: inline;
 }
