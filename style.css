@@ -188,6 +188,7 @@ header h4 {
   float:left;
   width: 620px;
   margin-left: 10px;
+  margin-bottom: 69px;
 }
 .article-main {
   width: 700px;
@@ -329,14 +330,40 @@ header h4 {
   color: #3080BD;
   font-size: 16px;
 }
-
-.fa-comment-o {
-  background-color: #60686E;
+.read-share > span{
+  height: 30px;
+  font-size: 13px;
+  padding: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 1px;
+  margin-right: 4px;
 }
+.endpara {
+  margin-bottom: 21px;
+}
+
+.fa-comment, .fa-cloud-download, .fa-share-square-o {
+    position: relative;
+    right: 14px;
+    background-color: #60686E;
+    padding: 7px;
+}
+
+.fa-comment:hover, .fa-cloud-download:hover, .fa-share-square-o:hover {
+  background-color: #083452;
+}
+
+
 .read-comments, .read-later, .share-post {
   background-color: #A3B3BF;
   color: #fff;
 }
+
+.read-comments:hover, .read-later:hover, .share-post:hover {
+  background-color: #106DB3;
+}
+
 
 .ad-stuff {
   font-size: 12px;
@@ -404,6 +431,7 @@ header h4 {
   font-size: 57px;
   color: #003552;
   text-transform: uppercase;
+  padding-bottom: 5px;
 
 }
 .pic img {
