@@ -36,6 +36,7 @@ header::before{
   background-color: rgba(28, 107, 174, 0.5);
 }
 
+
 /* Position these to bring them above overlay */
 header nav, header h1, header h3 {
   position: relative;
@@ -228,12 +229,36 @@ header h4 {
   text-align: center;
 }
 
-
 .author-pic img {
   width: 85px;
   border-radius: 50%;
   text-align: center;
 }
+
+.on-date {
+  padding-left: 4px;
+}
+.author-pic{
+  position: relative;
+}
+
+.author-pic::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 85px;
+  top: 0;
+  bottom: 3px;
+  left: 108px;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.5);
+  border-radius: 50%;
+}
+
+.author-pic:hover::after {
+  display: none;
+}
+
 .social-aut {
   position: relative;
   top: 5px;
@@ -300,6 +325,10 @@ header h4 {
 .date {
   text-decoration: underline;
 }
+
+.article-date {
+  position: relative;
+}
 .article-date img {
   position: absolute;
   border-radius: 50%;
@@ -307,20 +336,65 @@ header h4 {
   /*float: left;*/
 }
 
-/*.author-pic {
-  float: right;
-}*/
+.article-date::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.5);
+  border-radius: 50%;
+}
+.article-date:hover::after {
+  display: none;
+}
 
+.article-date img:hover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -10px;
+}
 .ad-picture {
+  position: relative;
   text-align: center;
   padding-top: 39px;
 }
 
-/*.ad-picture img {
+.ad-picture::after {
+  content: '';
+  display: block;
+  position: absolute;
   width: 280px;
   height: 302px;
-}*/
+  top: 39px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.5);
+}
 
+.ad-picture:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 302px;
+  top: 39px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  background-color: rgba(234, 106, 32, 0.5);
+}
+
+
+.author-pic img {
+  position: relative;
+}
 .ad-picture span {
   float: right;
   text-decoration: underline;
@@ -434,11 +508,11 @@ header h4 {
   padding-bottom: 5px;
 
 }
-.pic img {
+/*.pic img {
   position: absolute;
   display: inline;
   width: 326px;
-}
+}*/
 .pic {
   display: inline-block;
   width: 326px;
