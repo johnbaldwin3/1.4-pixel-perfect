@@ -92,7 +92,7 @@ nav::after {
   float: right;
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin: 14px 16px 0 0;
 }
 
 .header-links li {
@@ -111,7 +111,7 @@ nav::after {
 .header-links li span {
   display: inline-block;
   transform: scaleY(1.5);
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: -0.5px;
 }
 
@@ -125,6 +125,16 @@ nav::after {
   position: relative;
   top: 1px;
   right: 3px;
+}
+
+.header-links li:hover {
+  color: #FFF;
+  font-size: 16px;
+}
+/* looked up on MDN and www.css-tricks.com */
+.fa-search {
+  margin-left: 10px;
+  transform: scaleX(-1);
 }
 
 header h1,
@@ -162,10 +172,11 @@ header h4 {
   color: #003552;
   text-transform: uppercase;
   /*text-align: center;*/
-  font-size: 57px;
+  font-size: 59px;
   /*margin: 0 0 0 155px;*/
   height: 140px;
   letter-spacing: 2px;
+  word-spacing: -3px;
 }
 .float-contain {
   content:"";
@@ -176,6 +187,7 @@ header h4 {
 .primary-col {
   float:left;
   width: 620px;
+  margin-left: 10px;
 }
 .article-main {
   width: 700px;
@@ -183,14 +195,35 @@ header h4 {
   margin: 0 0 0 155px;
 }
 
+.lab span {
+  text-decoration: underline;
+  color: #A3B3BF;
+}
+
+.lab span:hover {
+  font-size: 18px;
+  color: #3080BD;
+}
+
+.excer {
+  text-decoration: underline;
+  color: #A3B3BF;
+}
+
+.excer span:hover {
+  font-size: 18px;
+  color: #3080BD;
+}
 .article-date {
   font-size: 12px;
+  position: relative;
+  top: -17px;
 }
 
 .side-col {
   float: right;
   width: 300px;
-  margin: 80px 155px 0 200px;
+  margin: 80px 155px 0 220px;
   text-align: center;
 }
 
@@ -201,12 +234,21 @@ header h4 {
   text-align: center;
 }
 .social-aut {
+  position: relative;
+  top: 5px;
   color: #106db3;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .social-ul {
-  padding-left: 0;
+  padding-left: 9px;
+  font-size: 13px;
+  margin-top: 11px;
+}
+
+.social-ul li:hover {
+  font-size: 14px;
+  color: darkblue;
 }
 .social-links {
   font-size: 12px;
@@ -215,18 +257,32 @@ header h4 {
 }
 .sidebar {
   width: 300px;
-  margin: 0 auto;
+  margin: 66px auto 0 11px;
   text-align: left;
 }
 
 .sidebar p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
+  color: #B4C7CF;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.under {
+  text-decoration: underline;
 }
 
+.under:hover {
+  color: #3080BD;
+  font-size: 16px;
+}
 .side-title {
-  font-size: 18px;
-  color: #106db3;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  color: #106DB3;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 15px;
 }
 .author-name {
   color: #106db3;
@@ -234,6 +290,9 @@ header h4 {
 }
 
 .spantop {
+  position: relative;
+  top: 7px;
+  left: 35px;
   vertical-align: middle;
   color: #B4C7CF;
 }
@@ -241,7 +300,9 @@ header h4 {
   text-decoration: underline;
 }
 .article-date img {
+  position: absolute;
   border-radius: 50%;
+  width: 23px;
   /*float: left;*/
 }
 
@@ -251,40 +312,78 @@ header h4 {
 
 .ad-picture {
   text-align: center;
+  padding-top: 39px;
 }
 
+/*.ad-picture img {
+  width: 280px;
+  height: 302px;
+}*/
+
 .ad-picture span {
-  text-align: right;
+  float: right;
+  text-decoration: underline;
+}
+
+.ad-picture span:hover {
+  color: #3080BD;
+  font-size: 16px;
+}
+
+.fa-comment-o {
+  background-color: #60686E;
+}
+.read-comments, .read-later, .share-post {
+  background-color: #A3B3BF;
+  color: #fff;
 }
 
 .ad-stuff {
   font-size: 12px;
+  position: relative;
+  font-size: 14px;
   color: #B4C7CF;
+  right: 7px;
+  top: 2px;
+
 }
 .aside p {
   text-align: left;
+
 }
 
 .para1 {
   /*width: 47.5%;*/
-  margin: 0 0 0 155px;
+  color: #5E686F;
+  margin: 25px 0 0 155px;
   /*font-size: 12px;*/
   font-size: 16px;
   /*clear: both; */
   word-spacing: 4px;
   width: 100%;
+  line-height: 27px;
+
 }
 
+.p1 {
+  margin-bottom: 23px;
+}
 .rad {
   color: #106db3;
-  font-size: 21px;
   border-left: 2px solid #D3D3D3;
-  padding-left: 17px;
+  height: 58px;
+  margin-left: 5px;
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
 .rad h2 {
-  font-weight: 100;
+  position: relative;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  left: 17px;
+  top: 14px;
 }
 
 /*.social-links {
@@ -379,7 +478,7 @@ header h4 {
 .iron-logo {
   position: relative;
   float: left;
-  margin-left: 30px;
+  margin-left: 151px;
   top: 12px;
 }
 
@@ -392,20 +491,36 @@ header h4 {
 
 .footer-nav {
   float: right;
+  margin-top: 13px;
+  margin-right: 151px;
 }
 .footer-nav > ul > li{
   display: inline;
   font-size: 12px;
+  border-right: 1px solid #A3B3BF;
+  letter-spacing: 1px;
+  padding-right: 3px;
+
+}
+
+.footer-nav > ul > li > span:hover {
+  color: #FFF;
+}
+
+.footer-nav > ul > li:nth-child(4) {
+  border-right: none;
 }
 
 .footer {
   position: absolute;
+  margin-bottom: 0;
 }
 footer h6 {
   display: inline;
   /*font-family: 'Oswald', sans-serif;*/
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   clear: both;
   font-weight: 400;
+
 }
