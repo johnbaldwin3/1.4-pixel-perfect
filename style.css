@@ -62,7 +62,7 @@ nav::after {
   margin-left: 14px;
 }
 
-.branding:hover {
+.branding h2:hover {
   color: #fff;
 }
 
