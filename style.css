@@ -173,6 +173,10 @@ header h4 {
   /*overflow: hidden;*/
 }
 
+.test-container {
+  margin-left: 167px;
+}
+
 .headline h1 {
   color: #003552;
   text-transform: uppercase;
@@ -192,7 +196,8 @@ header h4 {
 .primary-col {
   float:left;
   width: 620px;
-  margin-left: 10px;
+  margin-left: 167px;
+
   margin-bottom: 69px;
 }
 .article-main {
@@ -261,6 +266,7 @@ header h4 {
 
 .author-pic:hover::after {
   display: none;
+  cursor: grab;
 }
 
 .social-aut {
