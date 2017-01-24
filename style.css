@@ -174,8 +174,8 @@ header h4 {
 }
 
 .test-container {
-  margin-left: 167px;
-}
+  text-align: center;
+  }
 
 .headline h1 {
   color: #003552;
@@ -200,6 +200,8 @@ header h4 {
 
   margin-bottom: 69px;
 }
+
+ /*is this where my issue is with secondary column collapse??*/
 .article-main {
   width: 700px;
   /*clear: right;*/
