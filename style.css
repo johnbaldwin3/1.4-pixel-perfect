@@ -175,6 +175,7 @@ header h4 {
 
 .test-container {
   text-align: center;
+  margin-left: -4px;
   }
 
 .headline h1 {
@@ -196,7 +197,7 @@ header h4 {
 .primary-col {
   float:left;
   width: 620px;
-  margin-left: 167px;
+  padding-left: 9px;
 
   margin-bottom: 69px;
 }
@@ -236,7 +237,9 @@ header h4 {
 .side-col {
   float: right;
   width: 300px;
-  margin: 80px 155px 0 220px;
+  margin-top: 79px;
+
+  margin-left: 222px;
   text-align: center;
 }
 
