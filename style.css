@@ -510,8 +510,10 @@ header h4 {
   display: inline;
 }
 
+
 .bottom-headline {
-  border-top: 1px solid #DFE8EA;
+  /*border-top: 1px solid #DFE8EA;
+  border-top-width: 80%; */
   text-align: center;
   letter-spacing: 2px;
 }
@@ -549,7 +551,9 @@ header h4 {
 }
 .above-footer-pics {
   /*display: inline-block;*/ /*this was holding off the footer?!*/
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   font-size: 0px;
   /*position: absolute;*/
 }
