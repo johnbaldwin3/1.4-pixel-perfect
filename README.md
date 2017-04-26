@@ -1,5 +1,11 @@
 # 1.4-pixel-perfect
-Designing a pixel perfect replica of website
+
+Week 1
+------
+Website: https://johnbaldwin3.github.io/1.4-pixel-perfect/
+------
+
+Assignment: Design a pixel perfect replica of website, given a screenshot/design comp.
 
 
 Given the task of recreating a page with only HTML, CSS, and minimal JS to be as exact to a pixel as possible.
